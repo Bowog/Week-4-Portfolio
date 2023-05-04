@@ -53,18 +53,21 @@
     <!-- About -->
     <section class="about" id="about_us">
       <div class="main">
-        <img src="./image 4.jpg" alt="image" />
         <div class="about__text">
           <h2>About Me</h2>
-          <h5>Developer <span>& Designer</span></h5>
+          <h5>Web Developer <span>& Farmer</span></h5>
           <p>
-            I am a front-end web developer. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Ex blanditiis laboriosam laborum vel
-            distinctio placeat accusantium doloremque, tempore vitae odit
-            officiis natus quia deleniti et architecto ducimus odio, minus
-            dolores.
+            I am a Certified Animal Scientist which qualifies me to called a
+            Farmer and a Farm Consultant. I am currently learning Web
+            Development not just to improve my online visiblity but to also get
+            an additional source of income
           </p>
           <button type="button">Let's talk</button>
+        </div>
+        <div class="image">
+          <img src="./image 4.jpg" alt="image1" />
+          <img src="./Image 5.jpg" alt="image2" />
+          <img src="./Image 6.jpg" alt="image3" />
         </div>
       </div>
     </section>
@@ -76,12 +79,12 @@
       <div class="box">
         <div class="card">
           <i class="fas fa-bars"></i>
-          <h5>Web Development</h5>
+          <h5>Farm Consult</h5>
           <div class="pra">
             <p>
-              Every website should be built with two primary goals: Firstly, it
-              needs to work across all devices. Secondly, it needs to be fast as
-              possible.
+              We are available to bring your farm to optimum production from
+              scratch, our service covered the wild range of farm animals like
+              poultry, ruminant, rabbitry and the likes.
             </p>
             <p style="text-align: center">
               <a href="#" class="button">Read More</a>
@@ -104,12 +107,12 @@
         </div>
         <div class="card">
           <i class="far fa-bell"></i>
-          <h5>Web Development</h5>
+          <h5>Data Analytics</h5>
           <div class="pra">
             <p>
-              Every website should be built with two primary goals: Firstly, it
-              needs to work across all devices. Secondly, it needs to be fast as
-              possible.
+              This service will soon be available. I am currectly brushing up my
+              ability to render this service. Always trying to bring you the
+              best.
             </p>
             <p style="text-align: center">
               <a href="#" class="button">Read More</a>
@@ -119,7 +122,7 @@
       </div>
     </div>
     <!-- skills -->
-    <div class="skills">
+    <div class="skills" id="skills">
       <h3>Skills</h3>
       <p>Leadership</p>
       <p>Communication</p>
@@ -130,7 +133,42 @@
     <!-- contact -->
     <div class="contact__me" id="contact_me">
       <p>Let Me Get You A Beautiful Website.</p>
-      <a href="#" class="btn2">Hire Me</a>
+      <div class="container">
+        <form action="#">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="nigeria">Nigeria</option>
+            <option value="ghana">Ghana</option>
+            <option value="south-africa">South Africa</option>
+          </select>
+
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </div>
     <!-- footer -->
     <footer>
@@ -141,8 +179,10 @@
       </p>
       <div class="social">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/Kol4reel"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
       </div>
       <p class="end">CopyRight By Kolade Ogunola</p>
     </footer>

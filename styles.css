@@ -8,7 +8,7 @@
 .header {
   height: 100vh;
   width: 100%;
-  background-image: url(./reading-bench-concept.jpg);
+  background-image: url(./pexels-hasan-albari-1229861.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -19,7 +19,7 @@ nav {
   padding-top: 45px;
   padding-left: 8%;
   padding-right: 8%;
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 .logo {
@@ -117,12 +117,19 @@ h4 {
   max-width: 95%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
+.about .image {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .about img {
   height: auto;
-  width: 350px;
+  width: 400px;
+  margin: 20px 10px;
 }
 .about__text {
   width: 500px;
@@ -219,6 +226,7 @@ button:hover {
   padding: 9px 22px;
   border-radius: 30px;
   transition: 0.4s;
+  margin-top: 20px;
 }
 .card .button:hover {
   background-color: transparent;
@@ -245,11 +253,12 @@ button:hover {
   font-size: 16px;
   line-height: 27px;
   margin-bottom: 25px;
+  font-size: 20px;
 }
 /* contact */
 .contact__me {
   width: 100%;
-  height: 290px;
+  height: 100vh;
   background: #101010;
   display: flex;
   align-items: center;
@@ -262,7 +271,27 @@ button:hover {
   font-weight: bold;
   margin-bottom: 25px;
 }
-.contact__me .btn2 {
+.contact__me .container {
+  border-radius: 5px;
+  /* background-color: #f2f2f2; */
+  padding: 20px;
+}
+.contact__me .container label {
+  color: white;
+}
+.contact__me .container input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.contact__me .container input[type="submit"] {
   background-color: #f9004d;
   color: white;
   text-decoration: none;
@@ -272,7 +301,7 @@ button:hover {
   border-radius: 30px;
   transition: 0.4s;
 }
-.contact__me .btn2:hover {
+.contact__me .container input[type="submit"]:hover {
   background-color: transparent;
   border: 2px solid #f9004d;
   cursor: pointer;
@@ -325,4 +354,29 @@ footer p:nth-child(2) {
   color: #f9004d;
   bottom: 35px;
   font-size: 14px;
+}
+@media (max-width: 600px) {
+  nav ul li {
+    padding: 0px 16px;
+  }
+  .btn {
+    display: none;
+  }
+  .about .image {
+    flex-direction: column;
+  }
+  .service {
+    background-color: #101010;
+    width: 100%;
+    padding: 100px 0px;
+  }
+  .title h2 {
+    width: 300px;
+  }
+  .box {
+    flex-direction: column;
+  }
+  .contact__me p {
+    margin-top: 45px;
+  }
 }
